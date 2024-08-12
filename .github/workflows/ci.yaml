@@ -1,0 +1,25 @@
+name: CI
+
+on:
+  push:
+    branches:
+      - development
+  pull_request:
+    types: [ assigned, opened, synchronize, reopened, labeled ]
+
+env:
+  ZS_PAT: ${{ secrets.GITHUB_TOKEN }}
+
+jobs:
+  build:
+    runs-on: ubuntu-latest
+    permissions:
+      contents: read
+      packages: read
+    steps:
+      - uses: actions/checkout@v3
+      - uses: actions/setup-node@v3
+        with:
+          node-version: 18.x
+      - run: yarn install
+      - run: yarn lint

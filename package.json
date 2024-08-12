@@ -1,0 +1,48 @@
+{
+  "name": "@dazlab/eslint-config",
+  "version": "0.0.1",
+  "license": "UNLICENSED",
+  "description": "Shared ESLint Configuration Package",
+  "publishConfig": {
+    "access": "restricted",
+    "registry": "https://npm.pkg.github.com"
+  },
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/dazlab/eslint-config.git"
+  },
+  "files": [
+    "index.js",
+    ".eslintrc.json"
+  ],
+  "engines": {
+    "node": ">=16"
+  },
+  "main": "index.js",
+  "keywords": [
+    "eslint",
+    "eslintconfig",
+    "prettier",
+    "prettierrc"
+  ],
+  "scripts": {
+    "lint": "eslint .",
+    "fix": "eslint --fix .",
+    "prettier": "npx prettier --write ."
+  },
+  "prettier": "@dazlab/prettier-config",
+  "dependencies": {
+    "@typescript-eslint/eslint-plugin": "^6.9.0",
+    "@typescript-eslint/parser": "^6.9.0",
+    "eslint": "^8.52.0",
+    "eslint-config-prettier": "^9.0.0",
+    "eslint-plugin-node": "^11.1.0",
+    "eslint-plugin-prettier": "^5.0.1",
+    "prettier": "^3.0.3"
+  },
+  "devDependencies": {
+    "@types/node": "^16.11.7",
+    "@dazlab/prettier-config": "^0.0.1",
+    "typescript": ">=4 <5"
+  }
+}
