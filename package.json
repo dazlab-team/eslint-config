@@ -1,5 +1,5 @@
 {
-  "name": "@dazlab/eslint-config",
+  "name": "@dazlab-team/eslint-config",
   "version": "0.0.1",
   "license": "UNLICENSED",
   "description": "Shared ESLint Configuration Package",
@@ -9,7 +9,7 @@
   },
   "repository": {
     "type": "git",
-    "url": "https://github.com/dazlab/eslint-config.git"
+    "url": "https://github.com/dazlab-team/eslint-config.git"
   },
   "files": [
     "index.js",
@@ -30,7 +30,7 @@
     "fix": "eslint --fix .",
     "prettier": "npx prettier --write ."
   },
-  "prettier": "@dazlab/prettier-config",
+  "prettier": "@dazlab-team/prettier-config",
   "dependencies": {
     "@typescript-eslint/eslint-plugin": "^6.9.0",
     "@typescript-eslint/parser": "^6.9.0",
@@ -42,7 +42,7 @@
   },
   "devDependencies": {
     "@types/node": "^16.11.7",
-    "@dazlab/prettier-config": "^0.0.1",
+    "@dazlab-team/prettier-config": "^0.0.1",
     "typescript": ">=4 <5"
   }
 }

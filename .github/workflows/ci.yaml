@@ -8,7 +8,7 @@ on:
     types: [ assigned, opened, synchronize, reopened, labeled ]
 
 env:
-  ZS_PAT: ${{ secrets.GITHUB_TOKEN }}
+  DAZLAB_PAT: ${{ secrets.GITHUB_TOKEN }}
 
 jobs:
   build:
